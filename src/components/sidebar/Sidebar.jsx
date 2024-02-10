@@ -1,4 +1,14 @@
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import PlayLessonIcon from '@mui/icons-material/PlayLesson';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import DateRangeIcon from '@mui/icons-material/DateRange';
+import PaidIcon from '@mui/icons-material/Paid';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import CloudIcon from '@mui/icons-material/Cloud';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import SettingsIcon from '@mui/icons-material/Settings';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import LogoutIcon from '@mui/icons-material/Logout';
 import "./sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 
@@ -11,57 +21,65 @@ const Sidebar = () => {
       <hr />
       <div className="center">
         <ul>
+          <p className="title">MAIN</p>
           <li>
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
+          <p className="title">LISTS</p>
           <li>
             <PersonOutlineOutlinedIcon className="icon" />
             <span>Users</span>
           </li>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <PlayLessonIcon className="icon" />
             <span>Courses</span>
           </li>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <AccessTimeIcon className="icon" />
             <span>Times</span>
           </li>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
-            <span>Weak</span>
+            <DateRangeIcon className="icon" />
+            <span>Week</span>
           </li>
+          <p className="title">USEFUL</p>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <PaidIcon className="icon" />
             <span>Payment</span>
           </li>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <NotificationsIcon className="icon" />
             <span>Notification</span>
           </li>
+          <p className="title">SERVICE</p>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <CloudIcon className="icon" />
             <span>System Health</span>
           </li>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <PsychologyIcon className="icon" />
             <span>Logs</span>
           </li>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <SettingsIcon className="icon" />
             <span>Settings</span>
           </li>
+          <p className="title">USER</p>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <AccountCircleIcon className="icon" />
             <span>Profile</span>
           </li>
           <li>
-            {/* <PersonOutlineIcon className="icon" /> */}
+            <LogoutIcon className="icon" />
             <span>Logout</span>
           </li>
         </ul>
       </div>
-      <div className="bottom">color options</div>
+      <div className="bottom">
+        <div className="colorOption"></div>
+        <div className="colorOption"></div>
+      </div>
     </div>
   );
 };
