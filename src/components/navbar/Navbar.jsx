@@ -18,6 +18,7 @@ const Navbar = () => {
         <div className="items">
           <div className="item">
             <LanguageIcon className="icon" />
+            English
           </div>
           <div className="item">
             <DarkModeIcon className="icon" />
