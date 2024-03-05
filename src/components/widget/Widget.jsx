@@ -1,8 +1,27 @@
-import "./widget.scss"
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import "./widget.scss";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import AccauntBalanceWalletOutlinedIcon from "@mui/icons-material/AccauntBalanceWalletOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 
-const Widget = () => {
+const Widget = ({ type }) => {
+  let data;
+
+  switch (type) {
+    case "user":
+      data = {
+        title: "USER",
+        isMoney: false,
+        link: "See all users",
+        icon: <PersonOutlineIcon className="icon" />,
+      };
+      break;
+    default:
+      break;
+  }
+
+
   return (
     <div className="widget">
       <div className="left">
@@ -11,14 +30,14 @@ const Widget = () => {
         <span className="link">See all user</span>
       </div>
       <div className="right">
-        <div className="percentage">
-          <KeyboardArrowUpIcon/>
+        <div className="percentage positive">
+          <KeyboardArrowUpIcon />
           20%
         </div>
-        <PersonOutlineIcon className="icon"/>
+        <PersonOutlineIcon className="icon" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Widget
+export default Widget;
